@@ -19,7 +19,7 @@ Connect with us on Threads or LinkedIn.
 
 Dev Patel: [LinkedIn](https://www.linkedin.com/in/dev-patel-24b934299/)  
 
-Localization added by [François Hernandez](https://github.com/DevPatel0007)
+Localization added by (https://github.com/DevPatel0007)
 
 
 # **License**

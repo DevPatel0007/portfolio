@@ -68,7 +68,7 @@ const display = {
 };
 
 const mailchimp = {
-  action: "https://url/subscribe/post?parameters",
+  action: "https://dev-jigneshkumar-patel-portfolio.netlify.app//subscribe/post?parameters",
   effects: {
     mask: {
       cursor: false,

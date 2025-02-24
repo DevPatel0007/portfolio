@@ -1,4 +1,4 @@
-const baseURL = "demo.magic-portfolio.com";
+const baseURL = "https://dev-jigneshkumar-patel-portfolio.netlify.app/";
 
 const routes = {
   "/": true,

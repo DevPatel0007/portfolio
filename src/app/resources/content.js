@@ -56,7 +56,7 @@ const home = {
   subline: (
     <>
       I'm Dev, a Student at <InlineCode>Apollo institute of engineering and technology(Gujarat Thechnological University)</InlineCode>, where I am doing
-       <br /><InlineCode> Computer Engineeing in Diploma</InlineCode> and Learning computer fundaments and computer languvages like C, C++, DSA, Java, Python and more
+       <br /><InlineCode> Computer Engineeing in Diploma</InlineCode> and Learning computer fundaments and computer languages like C, C++, DSA, Java, Python and more
     </>
   ),
 };
@@ -98,7 +98,7 @@ const about = {
         role: "AI ML Developer (Internship)",
         achievements: [
           <>
-            Strong Python & Data Handling Skills – Proficiency in Python andlibraries like NumPy,Pandas, and Matplotlib for datamanipulation.
+            Strong Python & Data Handling Skills – Proficiency in Python and libraries like NumPy,Pandas, and Matplotlib for datamanipulation.
           </>,
           <>
             Designed and implemented a chatbot using Natural Language Processing (NLP) and Deep Learning that improved customer engagement by 40%.
@@ -120,7 +120,7 @@ const about = {
         role: "Python Developer (Internship)",
         achievements: [
           <>
-            DEVLOPERProficiency in Python and its core libraries
+            Proficiency in Python and its core libraries
           </>,
           <>
             Knowledge of OOP (Object-Oriented Programming) concepts

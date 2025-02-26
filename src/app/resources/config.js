@@ -68,7 +68,7 @@ const display = {
 };
 
 const mailchimp = {
-  action: "https://dev-jigneshkumar-patel-portfolio.netlify.app/subscribe/post?parameters",
+  action: "https://app.us14.list-manage.com/subscribe/post?u=505239f93dd64de8718e6a50a&id=b18210510f&f_id=00ecc7e0f0",
   effects: {
     mask: {
       cursor: false,

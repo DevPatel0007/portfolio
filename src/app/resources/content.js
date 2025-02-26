@@ -46,6 +46,11 @@ const social = [
     icon: "email",
     link: "mailto:devjpatel13@gmail.com",
   },
+  {
+    name: "CV",
+    //icon: "", 
+    link: "/Dev_Jigneshkumar_Patel.pdf", 
+  },
 ];
 
 const home = {

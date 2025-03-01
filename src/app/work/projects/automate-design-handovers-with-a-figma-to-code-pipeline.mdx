@@ -1,44 +1,47 @@
 ---
-title: "Hostel management system"
-publishedAt: "2024-04-01"
-summary: "A website to manage hostel student"
-images:
-  - "/images/projects/project-01/5.png"
-  - "/images/projects/project-01/6.png"
-team:
-  - name: "Dev Patel"
-    role: "Software Engineer(Pythyon developer)"
-    avatar: "/images/avatar2.png"
-    linkedIn: "https://www.linkedin.com/in/dev-patel-24b934299"
+
+**title:** "Hostel Management System"  
+**publishedAt:** "2024-04-01"  
+**summary:** "A website to manage hostel student bookings and records."  
+
+**images:**  
+  - "/images/projects/project-01/5.png"  
+  - "/images/projects/project-01/6.png"  
+
+**team:**  
+  - **name:** "Dev Patel"  
+    **role:** "Software Engineer (Python Developer)"  
+    **avatar:** "/images/avatar2.png"  
+    **linkedIn:** "https://www.linkedin.com/in/dev-patel-24b934299"  
 
 ---
 
-## Overview
+## Overview  
 
-In this project, I focused on automating the often tedious design handover process. The goal was to create a pipeline that converts Figma designs directly into clean, production-ready code. By integrating design tokens, component libraries, and automated workflows, this solution significantly reduced the time spent on translating design assets into code, while maintaining design consistency across the product.
+The **Hostel Management System** is a web-based application developed using **Django** to streamline the management of hostel facilities. This platform allows students to **register, book rooms, and manage their hostel details**, while administrators can oversee room availability and student records.  
 
-## Key Features
+## Key Features  
 
-- **Figma Plugin Integration**: Developed a custom Figma plugin that extracts design tokens such as colors, typography, and spacing values, and exports them in a format compatible with our codebase.
-- **Code Generation**: Integrated an automated process that translates Figma components into React code using a combination of design tokens and pre-built component templates. This allowed developers to focus more on logic and less on repetitive UI coding.
-- **Continuous Sync**: Established a CI/CD pipeline that continuously synchronizes design changes from Figma to the codebase, ensuring design updates are reflected instantly without manual intervention.
-- **Scalable Design System**: Leveraged a design system that remains the single source of truth for both designers and developers, making it easy to maintain consistency even as the product evolves.
+- **Student Login System** – Secure authentication for students to access their dashboard.  
+- **Dashboard Analytics** – Displays the number of registered students, available rooms, and booked rooms.  
+- **Hostel Booking** – Students can search for and book available hostel rooms.  
+- **Room Details Management** – Users can view their assigned rooms and update details.  
+- **Activity Logs** – Tracks student activities and room changes for better management.  
 
-## Technologies Used
+## Technologies Used  
 
-- **Figma API**: For extracting design tokens and component data directly from the Figma designs.
-- **React and Next.js**: For building the front-end codebase with clean, reusable components.
-- **Styled-Components**: For managing styles dynamically using design tokens.
-- **GitHub Actions**: For automating the pipeline and syncing design changes to the repository.
+- **Backend:** Django (Python)  
+- **Frontend:** HTML, CSS, JavaScript (Bootstrap for styling)  
+- **Database:** SQLite / PostgreSQL  
+- **Authentication:** Django’s built-in authentication system  
+- **Hosting:** Deployed using AWS / DigitalOcean / Heroku (if applicable)  
 
-## Challenges and Learnings
+## Challenges and Learnings  
 
-One of the biggest challenges was ensuring that the generated code was clean and maintainable. This involved setting up intelligent mapping between Figma components and React code structures, as well as managing edge cases like responsive design and conditional rendering. Additionally, the continuous synchronization required a robust error-handling system to prevent conflicts during development.
+One major challenge was **handling real-time room availability** and preventing double booking. This was solved by implementing a **transaction-based booking system** with **database locks** to ensure data consistency. Additionally, optimizing **database queries** improved the system’s performance.  
 
-## Outcome
+## Outcome  
 
-The automated Figma to code pipeline has streamlined the handoff process, cutting down design-to-development time by 40%. Designers now have more confidence that their designs will be accurately translated into code, and developers can focus on more complex logic and feature development. This project has proven the value of automation in bridging the gap between design and development.
+The **Hostel Management System** has made it easier for students to book and manage their hostel accommodations efficiently. The admin panel helps hostel managers **monitor occupancy, track student activities, and manage room assignments seamlessly**.  
 
----
-
-This project demonstrates your ability to leverage automation and streamline workflows, which is highly relevant for design engineering portfolios focused on efficiency and innovation.
+---  

@@ -61,7 +61,7 @@ const home = {
   subline: (
     <>
       I'm Dev, a Student at <InlineCode>Apollo institute of engineering and technology(Gujarat Thechnological University)</InlineCode>, where I am doing
-       <br /><InlineCode> Computer Engineeing in Diploma</InlineCode> and Learning computer fundaments and computer languages like C, C++, DSA, Java, Python and more
+       <br /><InlineCode>Diploma in Computer Engineeing</InlineCode> and Learning computer fundaments and computer languages like C, C++, DSA, Java, Python and more
     </>
   ),
 };

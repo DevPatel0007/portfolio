@@ -84,7 +84,7 @@ export default function TechUpdates() {
               style={{ backgroundColor: "var(--color-neutral-weak)" }}
             >
               <Flex fillWidth horizontal="space-between" vertical="center" wrap>
-                <Tag variant="secondary" size="s">
+                <Tag variant="neutral" size="s">
                   {update.category}
                 </Tag>
                 <Text variant="body-default-s" onBackground="neutral-weak">

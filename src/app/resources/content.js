@@ -54,7 +54,7 @@ const social = [
   {
     name: "CV",
     icon: "cv",
-    link: "/Dev_Jigneshkumar_Patel.pdf", 
+    link: "/DEV%20JIGNESHKUMAR%20PATEL.pdf", 
   },
 ];
 

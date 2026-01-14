@@ -32,13 +32,36 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <Column fillWidth gap="m">
-      <Carousel
-        sizes="(max-width: 960px) 100vw, 960px"
-        images={images.map((image) => ({
-          src: image,
-          alt: title,
-        }))}
-      />
+      {link && images.length === 0 ? (
+        <div
+          style={{
+            width: "100%",
+            height: "500px",
+            borderRadius: "8px",
+            overflow: "hidden",
+            border: "1px solid var(--color-neutral-medium)",
+            boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+          }}
+        >
+          <iframe
+            src={link}
+            width="100%"
+            height="100%"
+            style={{ border: "none" }}
+            title={`${title} - Live Preview`}
+            allow="fullscreen"
+            loading="lazy"
+          />
+        </div>
+      ) : (
+        <Carousel
+          sizes="(max-width: 960px) 100vw, 960px"
+          images={images.map((image) => ({
+            src: image,
+            alt: title,
+          }))}
+        />
+      )}
       <Flex
         mobileDirection="column"
         fillWidth

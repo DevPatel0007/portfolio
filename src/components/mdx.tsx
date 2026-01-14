@@ -128,6 +128,43 @@ function createParagraph({ children }: TextProps) {
   );
 }
 
+type IframeProps = {
+  src: string;
+  title?: string;
+  width?: string;
+  height?: string;
+};
+
+function Iframe({ src, title = "Embedded content", width = "100%", height = "600px" }: IframeProps) {
+  return (
+    <div
+      style={{
+        width: "100%",
+        maxWidth: "100%",
+        height: height,
+        marginTop: "2rem",
+        marginBottom: "2rem",
+        borderRadius: "8px",
+        overflow: "hidden",
+        border: "1px solid var(--color-neutral-medium)",
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        position: "relative",
+      }}
+    >
+      <iframe
+        src={src}
+        width={width}
+        height="100%"
+        style={{ border: "none", display: "block" }}
+        title={title}
+        allow="fullscreen"
+        loading="lazy"
+        sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+      />
+    </div>
+  );
+}
+
 const components = {
   p: createParagraph as any,
   h1: createHeading(1) as any,
@@ -140,6 +177,7 @@ const components = {
   a: CustomLink as any,
   Table,
   CodeBlock,
+  Iframe,
 };
 
 type CustomMDXProps = MDXRemoteProps & {

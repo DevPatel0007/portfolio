@@ -7,6 +7,7 @@ import {
   Icon,
   IconButton,
   SmartImage,
+  SmartLink,
   Tag,
   Text,
 } from "@/once-ui/components";
@@ -218,9 +219,17 @@ export default function About() {
                 {about.work.experiences.map((experience, index) => (
                   <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
                     <Flex fillWidth horizontal="space-between" vertical="end" marginBottom="4">
-                      <Text id={experience.company} variant="heading-strong-l">
-                        {experience.company}
-                      </Text>
+                      {experience.link ? (
+                        <SmartLink href={experience.link} target="_blank" rel="noopener noreferrer">
+                          <Text id={experience.company} variant="heading-strong-l">
+                            {experience.company}
+                          </Text>
+                        </SmartLink>
+                      ) : (
+                        <Text id={experience.company} variant="heading-strong-l">
+                          {experience.company}
+                        </Text>
+                      )}
                       <Text variant="heading-default-xs" onBackground="neutral-weak">
                         {experience.timeframe}
                       </Text>

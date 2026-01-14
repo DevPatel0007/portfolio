@@ -114,6 +114,30 @@ export default function Project({ params }: WorkParams) {
           src={post.metadata.images[0]}
         />
       )}
+      {post.metadata.link && (
+        <Column fillWidth style={{ maxWidth: "95vw", paddingLeft: "2rem", paddingRight: "2rem" }}>
+          <div
+            style={{
+              width: "100%",
+              height: "700px",
+              borderRadius: "8px",
+              overflow: "hidden",
+              border: "1px solid var(--color-neutral-medium)",
+              boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+            }}
+          >
+            <iframe
+              src={post.metadata.link}
+              width="100%"
+              height="100%"
+              style={{ border: "none" }}
+              title={`${post.metadata.title} - Live Preview`}
+              allow="fullscreen"
+              loading="lazy"
+            />
+          </div>
+        </Column>
+      )}
       <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
         <Flex gap="12" marginBottom="24" vertical="center">
           {post.metadata.team && <AvatarGroup reverse avatars={avatars} size="m" />}

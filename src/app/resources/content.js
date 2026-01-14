@@ -6,7 +6,7 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "PYTHON DEVELOPER/AI ML DEVELOPER",
+  role: "COMPUTER ENGINEER",
   avatar: "/images/avatar2.png",
   location: "Asia/India", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Hindi", "Gujarati"], // optional: Leave the array empty if you don't want to display languages
@@ -37,6 +37,11 @@ const social = [
     link: "https://www.linkedin.com/in/dev-patel-24b934299",
   },
   {
+    name: "Kaggle",
+    icon: "kaggle",
+    link: "https://www.kaggle.com/devpatel0007",
+  },
+  {
     name: "X",
     icon: "x",
     link: "",
@@ -48,7 +53,7 @@ const social = [
   },
   {
     name: "CV",
-    //icon: "", 
+    icon: "cv",
     link: "/Dev_Jigneshkumar_Patel.pdf", 
   },
 ];
@@ -57,11 +62,11 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>PYTHON DEVELOPER / <br  />AI ML DEVELOPER</>,
+  headline: <>COMPUTER ENGINEER</>,
   subline: (
     <>
-      I'm Dev, a Student at <InlineCode>Apollo institute of engineering and technology(Gujarat Thechnological University)</InlineCode>, where I am doing
-       <br /><InlineCode>Diploma in Computer Engineeing</InlineCode> and Learning computer fundaments and computer languages like C, C++, DSA, Java, Python and more
+      I'm Dev, a Computer Engineer who can adapt any language and tech stack. Currently studying at <InlineCode>Apollo institute of engineering and technology(Gujarat Technological University)</InlineCode>, where I am pursuing
+       <br /><InlineCode>B.E in Computer Engineering</InlineCode> with expertise in Web Development, RAG, AI/ML, and various programming languages including C, C++, DSA, Java, Python and more
     </>
   ),
 };
@@ -86,9 +91,10 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        I'm a Python developer and AI/ML engineer specializing in Three.js, AI solutions, and backend
-        development with Django & Flask. I build immersive web experiences and AI-powered
-        applications.
+        I'm a Computer Engineer who can adapt to any language and tech stack. I specialize in Web Development, 
+        RAG (Retrieval-Augmented Generation), AI/ML solutions, backend development with Django, Flask, Nest.js, 
+        Express.js, and frontend technologies like React, Next.js, and Three.js. I build immersive web experiences 
+        and AI-powered applications across diverse technology ecosystems.
       </>
     ),
   },
@@ -96,7 +102,6 @@ const about = {
     display: true, // set to false to hide this section
     title: "Work Experience",
     experiences: [
-      
       {
         company: "Addicted technologies",
         timeframe: "2024",
@@ -174,23 +179,23 @@ const about = {
     skills: [
       {
         title: "Programming Languages",
-        description: <>Able to develp code in<InlineCode> Python,JavaScript , C , C++ , Java , Php</InlineCode></>,
+        description: <>Proficient in developing code using <InlineCode>Python, JavaScript, C, C++, Java, PHP</InlineCode> and other modern programming languages</>,
         // optional: leave the array empty if you don't want to display images
       },
       {
-        title: "AI/ML Development: MachineLearning, DeepLearning, DataScience",
-        description: <>Able to create a models in AI ML or DeepLearning also know to data preprosesing</>,
+        title: "AI/ML Development: Machine Learning, Deep Learning, Data Science, RAG",
+        description: <>Experienced in creating AI/ML and Deep Learning models, implementing RAG (Retrieval-Augmented Generation) systems, and performing data preprocessing and analysis</>,
         // optional: leave the array empty if you don't want to display images
         
       },
       {
-        title: "Backend Development: Django,Flask",
-        description: <>Able to create website backend using Django Flask also Knowledge od detabase management</>,
+        title: "Backend Development: Django, Flask, Nest.js, Express.js",
+        description: <>Skilled in building robust website backends using <InlineCode>Django, Flask, Nest.js, Express.js</InlineCode> and other JavaScript-based backend frameworks, with expertise in database management and API development</>,
         // optional: leave the array empty if you don't want to display images
       },
       {
-        title: "website Development",
-        description: <>Able to create website using react, Three.js, Node.js, HTML, CSS</>,
+        title: "Web Development",
+        description: <>Capable of creating dynamic and interactive websites using <InlineCode>React, Next.js, Three.js, Node.js, HTML, CSS</InlineCode> and modern web technologies</>,
         // optional: leave the array empty if you don't want to display images
       },
     ],
@@ -214,80 +219,69 @@ const work = {
 };
 
 const gallery = {
-  label: "Gallery",
-  title: "My photo gallery",
-  description: `A photo collection by ${person.name}`,
-  // Images from https://pexels.com
-  images: [
+  label: "Daily Tech Updates",
+  title: "Daily Tech Updates",
+  description: `Stay updated with the latest technology news, trends, and innovations curated by ${person.name}`,
+  updates: [
     {
-      src: "/images/gallery/img-01.jpg",
-      alt: "image",
-      orientation: "vertical",
+      date: "2025-12-20",
+      title: "AI Breakthrough: New Language Model Achieves Human-Level Reasoning",
+      summary: "Researchers have developed a new AI model that demonstrates advanced reasoning capabilities, potentially revolutionizing how we interact with artificial intelligence.",
+      category: "Artificial Intelligence",
     },
     {
-      src: "/images/gallery/img-02.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      date: "2025-12-19",
+      title: "Quantum Computing Milestone: 1000-Qubit Processor Unveiled",
+      summary: "A major tech company has announced a breakthrough in quantum computing with a new 1000-qubit processor, bringing us closer to practical quantum applications.",
+      category: "Quantum Computing",
     },
     {
-      src: "/images/gallery/img-03.jpg",
-      alt: "image",
-      orientation: "vertical",
+      date: "2025-12-18",
+      title: "Web3 Revolution: Decentralized Social Networks Gain Traction",
+      summary: "Decentralized social media platforms are seeing increased adoption as users seek more control over their data and content.",
+      category: "Web3",
     },
     {
-      src: "/images/gallery/img-04.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      date: "2025-12-17",
+      title: "Edge Computing: The Future of Low-Latency Applications",
+      summary: "Edge computing infrastructure is expanding rapidly, enabling real-time processing for IoT devices, autonomous vehicles, and AR/VR applications.",
+      category: "Cloud Computing",
     },
     {
-      src: "/images/gallery/img-05.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      date: "2025-12-16",
+      title: "Sustainable Tech: Green AI Models Reduce Carbon Footprint",
+      summary: "New energy-efficient AI training methods are reducing the environmental impact of machine learning by up to 90%.",
+      category: "Sustainability",
     },
     {
-      src: "/images/gallery/img-06.jpg",
-      alt: "image",
-      orientation: "vertical",
+      date: "2025-12-15",
+      title: "5G Advanced: Next-Generation Networks Enable New Use Cases",
+      summary: "5G Advanced networks are rolling out globally, supporting enhanced mobile broadband and enabling new applications in smart cities and industrial automation.",
+      category: "Networking",
     },
     {
-      src: "/images/gallery/img-07.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      date: "2025-12-14",
+      title: "RAG Systems: Enhancing AI with Retrieval-Augmented Generation",
+      summary: "Retrieval-Augmented Generation (RAG) is transforming how AI systems access and utilize information, improving accuracy and reducing hallucinations.",
+      category: "AI/ML",
     },
     {
-      src: "/images/gallery/img-08.jpg",
-      alt: "image",
-      orientation: "vertical",
+      date: "2025-12-13",
+      title: "Cybersecurity: Zero-Trust Architecture Becomes Standard",
+      summary: "Organizations are increasingly adopting zero-trust security models to protect against sophisticated cyber threats in an interconnected world.",
+      category: "Cybersecurity",
     },
     {
-      src: "/images/gallery/img-09.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      date: "2025-12-12",
+      title: "Blockchain Innovation: Layer 2 Solutions Address Scalability",
+      summary: "New Layer 2 blockchain solutions are solving scalability issues, enabling faster and cheaper transactions while maintaining security.",
+      category: "Blockchain",
     },
     {
-      src: "/images/gallery/img-10.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-11.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/img-12.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-13.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/img-14.jpg",
-      alt: "image",
-      orientation: "horizontal",
+      date: "2025-12-11",
+      title: "DevOps Evolution: AI-Powered CI/CD Pipelines",
+      summary: "Artificial intelligence is being integrated into DevOps workflows, automating testing, deployment, and monitoring processes.",
+      category: "DevOps",
     },
   ],
 };
